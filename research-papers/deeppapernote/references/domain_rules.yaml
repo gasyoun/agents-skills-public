@@ -1,0 +1,256 @@
+# User-editable domain routing taxonomy.
+# Application domains are tried before fallback method domains.
+domains:
+  - label: Linguistics
+    aliases:
+      - linguistics
+      - computational linguistics
+      - philology
+      - indology
+      - sanskrit studies
+    specialized_folders:
+      - Sanskrit
+      - Morphology
+      - Phonology
+      - Syntax
+      - Lexicography
+    keywords:
+      - linguistics
+      - linguistic
+      - morphology
+      - morphological
+      - morphonology
+      - morphophonology
+      - phonology
+      - phonological
+      - phoneme
+      - morpheme
+      - syntax
+      - syntactic
+      - grammar
+      - grammatical
+      - sandhi
+      - sanskrit
+      - vedic
+      - paninian
+      - verbal root
+      - conjugation
+      - declension
+      - inflection
+      - inflectional
+      - derivation
+      - philology
+      - lexicon
+      - lexical
+      - lexicography
+      - dictionary
+      - corpus
+      - alternation
+      - guna
+      - vrddhi
+      - aorist
+      - tokenizer
+      - tokenization
+      - segmentation
+      - transliteration
+      - orthography
+    methods: []
+
+  - label: Healthcare
+    aliases:
+      - healthcare
+      - medical
+      - clinical medicine
+    specialized_folders:
+      - 心理健康
+    keywords:
+      - clinical
+      - patient
+      - patients
+      - depression
+      - anxiety
+      - mental health
+      - psychiatric
+      - psychology
+      - therapy
+      - counseling
+      - symptom
+      - diagnosis
+      - screening
+      - hospital
+      - healthcare
+      - medical
+    methods: []
+
+  - label: Law
+    aliases:
+      - legal
+      - law
+    keywords:
+      - legal
+      - law
+      - court
+      - judge
+      - contract
+      - statute
+      - regulation
+      - litigation
+      - case law
+    methods: []
+
+  - label: Education
+    aliases:
+      - education
+      - educational
+    keywords:
+      - education
+      - student
+      - teacher
+      - classroom
+      - curriculum
+      - tutoring
+      - learning analytics
+      - pedagogy
+    methods: []
+
+  - label: Finance
+    aliases:
+      - finance
+      - financial
+    keywords:
+      - finance
+      - financial
+      - stock
+      - market
+      - trading
+      - portfolio
+      - risk
+      - credit
+      - banking
+      - investment
+    methods: []
+
+  - label: Robotics
+    aliases:
+      - robotics
+      - robotic
+    keywords:
+      - robot
+      - robotics
+      - robotic
+      - manipulation
+      - navigation
+      - control policy
+      - locomotion
+      - autonomous driving
+      - embodied
+    methods:
+      - diffusion policy
+
+  - label: Software engineering
+    aliases:
+      - software engineering
+    keywords:
+      - software engineering
+      - code generation
+      - program repair
+      - bug
+      - repository
+      - developer
+      - code review
+      - test generation
+      - compiler
+    methods: []
+
+  - label: Biomedical
+    aliases:
+      - biomedical
+      - bioinformatics
+    keywords:
+      - biomedical
+      - genomics
+      - protein
+      - drug discovery
+      - molecular
+      - cell
+      - gene
+      - bioinformatics
+    methods: []
+
+  - label: Mental health
+    route_to: 医疗健康
+    aliases:
+      - mental health
+      - psychology
+      - psychiatry
+    keywords:
+      - depression
+      - anxiety
+      - mental health
+      - psychiatric
+      - psychology
+      - therapy
+      - counseling
+      - symptom
+    methods: []
+
+  - label: Recommender systems
+    aliases:
+      - recommender systems
+      - recommendation
+    keywords:
+      - recommendation
+      - recommender
+      - ctr prediction
+      - ranking system
+      - personalization
+    methods: []
+
+fallback_domains:
+  - label: LLMs
+    aliases:
+      - llm
+      - large language model
+      - language model
+      - foundation model
+    keywords:
+      - large language model
+      - llm
+      - foundation model
+      - gpt
+      - transformer
+      - instruction tuning
+      - pretrain
+      - pre-training
+      - language model
+      - agent
+      - multi-agent
+      - multi agent
+      - reasoning
+      - multimodal
+      - retrieval-augmented generation
+      - rag
+      - in-context learning
+      - long-context
+      - long context
+      - mixture-of-experts
+      - mixture of experts
+      - moe
+      - alignment
+      - rlhf
+    methods: []
+
+  - label: Machine learning
+    aliases:
+      - machine learning
+      - ml
+    keywords:
+      - machine learning
+      - deep learning
+      - neural network
+      - representation learning
+      - reinforcement learning
+      - computer vision
+      - graph neural network
+      - speech recognition
+    methods: []

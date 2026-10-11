@@ -1,0 +1,6 @@
+interface:
+  display_name: "ELI5 HTML"
+  short_description: "Picture-led HTML explainer for beginners"
+
+policy:
+  allow_implicit_invocation: false

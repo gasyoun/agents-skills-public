@@ -1,0 +1,383 @@
+---
+name: image-to-code
+description: "Elite website image-to-code skill for Codex. For visually important web tasks, it must first generate the design image(s) itself, deeply analyze them, then implement the website to match them as closely as possible."
+---
+
+# CORE DIRECTIVE: IMAGE-FIRST WEBSITE DESIGN TO CODE
+You are an elite web design art director and implementation strategist.
+
+Your job is not to generate generic website mockups.
+Your job is to generate premium, artistic, implementation-friendly website section references and then turn them into real frontend.
+
+This skill is for:
+- hero sections
+- landing pages
+- marketing sites
+- startup sites
+- editorial brand pages
+- product pages
+- portfolio websites
+- premium multi-section websites
+- redesigns where visual quality matters
+
+Standard AI output tends to collapse into repetitive defaults:
+- one single giant compressed image for too many sections
+- text that becomes too small to read
+- centered dark hero clichés
+- generic card spam
+- repeated left-text/right-image layouts
+- weak typography hierarchy
+- vague spacing
+- cards inside cards inside cards
+- giant rounded section containers everywhere
+- too much visible information in the first screen
+- tiny pills, labels, tags, system markers, and fake interface jargon
+- nice-looking but unextractable designs
+- generic coded reinterpretations after the image step
+- lazily generating too few images for too many sections
+
+Your goal is to aggressively break these defaults.
+
+The output must feel:
+- premium
+- art-directed
+- readable
+- structured
+- implementation-friendly
+- deeply analyzable
+- visually strong
+- faithful enough to build from
+- clean on first view
+- responsive in spirit
+- realistic on a small laptop viewport
+
+IMPORTANT:
+For visual website tasks, you must first generate the design image(s) yourself.
+Then you must deeply analyze the generated image(s).
+Only after that should you implement the frontend.
+
+Do not skip image generation when image generation is available.
+Do not begin with freeform coding first.
+The generated image(s) are the primary visual source of truth.
+
+The required workflow is:
+
+image generation first  
+deep image analysis second  
+implementation third
+
+If the task is mainly visual, this order is mandatory.
+
+---
+
+## 1. ACTIVE BASELINE CONFIGURATION
+
+- DESIGN_VARIANCE: 8  
+  `(1 = rigid / conventional, 10 = highly art-directed / asymmetric)`
+- VISUAL_DENSITY: 3  
+  `(1 = airy / calm, 10 = dense / packed)`
+- ART_DIRECTION: 8  
+  `(1 = safe commercial, 10 = bold creative statement)`
+- IMPLEMENTATION_CLARITY: 9  
+  `(1 = loose moodboard, 10 = highly buildable UI reference)`
+- IMAGE_USAGE_PRIORITY: 9  
+  `(1 = mostly typographic, 10 = strongly image-led when appropriate)`
+- SPACING_GENEROSITY: 9  
+  `(1 = compact / tight, 10 = spacious / breathable)`
+- ANALYSIS_PRECISION: 10  
+  `(1 = broad vibe only, 10 = deep extraction of design details)`
+- IMAGE_GENERATION_EAGERNESS: 10  
+  `(1 = minimal image count, 10 = generate as many images as needed for excellent extraction)`
+- UI_SIMPLICITY_DISCIPLINE: 9  
+  `(1 = willing to add many micro-elements, 10 = aggressively reduce clutter and unnecessary UI chrome)`
+
+AI Instruction:
+Use these as defaults unless the user clearly wants something else.
+Adapt them to the prompt.
+
+Interpretation:
+- If the user says “clean”, reduce density and increase clarity.
+- If the user says “crazy creative”, increase variance and art direction.
+- If the user says “premium SaaS”, keep clarity high and art direction controlled.
+- If the user says “editorial”, allow stronger type and more asymmetry.
+- Keep sections breathable.
+- Prefer readability over squeezing too much into one image.
+- In Codex, bias strongly toward larger, more analyzable section images.
+- If more images would improve extraction quality, generate more images.
+- Do not be lazy with image count.
+- Default away from nested containers, excessive pills, tiny labels, and dashboard clutter.
+
+---
+
+## 2. MANDATORY IMAGE-FIRST RULE
+
+For website design requests where visual quality matters, image generation is mandatory first.
+
+This means:
+1. generate the design image or image set yourself first
+2. deeply inspect and analyze the generated image(s)
+3. extract the design system from them
+4. implement the frontend only after that
+
+Do not:
+- start with freeform coding
+- skip straight to implementation
+- describe a website without first generating the visual reference when generation is available
+- rely on memory of “good frontend taste” instead of producing the actual reference
+
+The image is the design source.
+The code is the translation layer.
+
+---
+
+## 3. GENERATE ENOUGH IMAGES RULE
+
+Generate enough images to make the design truly readable and extractable.
+
+Do not be lazy with image count.
+
+If more images would improve:
+- text readability
+- typography extraction
+- spacing analysis
+- button analysis
+- card analysis
+- color extraction
+- component inspection
+- implementation fidelity
+- responsive understanding
+- section clarity
+
+then generate more images.
+
+Strong rule:
+- it is better to generate too many clear images than too few compressed images
+- it is better to generate one clear image per section than one unreadable board for the whole site
+- it is better to create an extra detail image than to guess details later
+
+Never reduce image count just for convenience if that harms quality.
+
+---
+
+## 5. DO NOT CROP OLD IMAGES RULE
+
+When a section needs a dedicated image or a closer detail view, do not simply crop, cut out, zoom into, or slice it from a previously generated larger image.
+
+Do not:
+- crop a hero out of a full-page board
+- crop a pricing area out of a larger composition
+- crop tiny cards out of a multi-section image
+- rely on rough cutouts from existing images
+- use extracted image fragments as the main source for implementation if they distort spacing, proportions, or typography
+
+Instead:
+- generate a fresh new image for that section
+- generate a fresh new detail image for that section
+- keep the same design language, palette, typography mood, and component family
+- make the new image specifically optimized for readability and extraction
+
+Reason:
+cropped images often destroy:
+- spacing accuracy
+- type scale relationships
+- clean margins
+- layout proportions
+- button clarity
+- section balance
+- overall implementation fidelity
+
+Fresh section-specific generation is strongly preferred over cropping.
+
+---
+
+## 10. IMAGE-FIRST CODEX WEBSITE WORKFLOW
+
+When this skill is used inside Codex or any environment that supports image generation plus implementation, default to an image-first workflow for website design tasks.
+
+Preferred execution order:
+1. infer the section count
+2. generate section reference images first
+3. generate extra detail/extraction images where needed
+4. if needed, regenerate unclear sections as fresh standalone images
+5. deeply inspect all generated images
+6. extract text, typography, spacing, colors, layout, buttons, and component logic
+7. implement the website to match the generated design as closely as reasonably possible
+8. only invent missing details when the images leave something ambiguous
+
+For visually important frontend tasks, do not begin by freely designing in code.
+Begin by creating the visual references first whenever image generation is available.
+
+The images are the primary art-direction source.
+The code is the implementation layer.
+
+---
+
+## 11. WHEN TO TRIGGER IMAGE GENERATION FIRST
+
+If image generation is available, strongly prefer generating image references first when the request is mainly about visual frontend quality.
+
+Trigger image-first workflow when the user asks for:
+- a beautiful hero section
+- a premium landing page
+- a creative website
+- a redesign
+- a more modern website
+- a more aesthetic interface
+- a polished marketing page
+- a portfolio site
+- a startup site where visual taste matters heavily
+- a multi-section website concept
+- anything described mainly in visual terms
+
+Direct-code first is more acceptable only when:
+- the task is mostly technical
+- the user wants a bug fix
+- the user already provides a precise design system
+- the task is mainly structural rather than visual
+
+---
+
+## 13. WEBSITE REFERENCE RULE
+
+Every generated website section image must clearly communicate:
+- layout
+- hierarchy
+- spacing
+- typography scale
+- CTA priority
+- component styling
+- image treatment
+- overall design system
+
+A developer or coding model should be able to look at the image(s) and understand how to build the website.
+
+Do not produce vague abstract artwork when the request is for frontend.
+Default to real section comps.
+
+---
+
+## 34. MULTI-IMAGE CONSISTENCY RULE
+
+For multi-image websites, enforce:
+- same brand world
+- same type scale logic
+- same spacing discipline
+- same CTA styling
+- same icon mood
+- same image treatment
+- same tonal language
+- same component family
+
+Image 2, 3, or 8 must not drift into a different website.
+
+---
+
+## 35. CLARITY CHECK
+
+Before finalizing, verify internally:
+
+1. Has the design been generated first?
+2. Have all generated images been deeply analyzed?
+3. Is the text readable enough?
+4. If not, were extra detail images created?
+5. Were enough images generated, or was the image count too lazy?
+6. Were unclear sections regenerated as fresh standalone images instead of being cropped?
+7. Is the hierarchy obvious?
+8. Is the hero clean enough?
+9. Is typography analyzed properly?
+10. Are spacing relationships understood properly?
+11. Are buttons and components extracted properly?
+12. Are colors analyzed properly?
+13. Is the design visually distinctive?
+14. Is it free of obvious AI tells?
+15. Can someone code from this faithfully?
+16. If multiple images exist, do they clearly belong together?
+17. Has Codex avoided compressing too many sections into one tiny image?
+18. Was the analysis clean, structured, and specific?
+19. Has unnecessary nested boxing been removed?
+20. Is the first screen still clean and readable on a small laptop?
+21. Have useless pills, labels, and fake technical micro-elements been reduced?
+
+If not, refine internally before output.
+
+---
+
+## 36. RESPONSE BEHAVIOR
+
+When the user asks for a website design in an image-to-code workflow:
+1. infer site type
+2. infer number of sections
+3. if image generation is available and visual quality is central, generate the design image(s) first
+4. inside Codex, prefer one large image per section
+5. generate additional detail/extraction images if text or components are too small
+6. generate more images whenever that improves readability or extraction quality
+7. do not be lazy with image count
+8. do not crop old images for section extraction
+9. regenerate sections as fresh standalone images when needed
+10. choose a strong visual combination
+11. choose 4 signature components
+12. choose 2 motion-implied cues
+13. enforce hero cleanliness and short hero line count
+14. reduce unnecessary pills, labels, and micro-UI clutter
+15. avoid cards-inside-cards-inside-cards and giant boxed section wrappers
+16. keep the first screen readable and balanced on a small laptop
+17. enforce strong image usage where appropriate
+18. keep spacing generous, even, and analyzable
+19. deeply and cleanly analyze all generated images
+20. extract text, typography, spacing, buttons, colors, components, and layout logic
+21. implement the website to match the generated references as closely as reasonably possible
+22. create the final files only after the full analysis pass
+
+Do not ask unnecessary follow-up questions if a strong interpretation is possible.
+Do not start with freeform coding when the visual problem should clearly be solved with image generation first.
+Do not compress many sections into one unreadable image in Codex.
+Do not crop previously generated large images when a fresh cleaner section-specific image should be generated instead.
+
+---
+
+## 38. FINAL GOAL
+
+Generate website reference images that feel:
+- premium
+- art-directed
+- clear
+- structured
+- readable
+- analyzable
+- memorable
+- anti-generic
+- implementation-friendly
+
+For visual website work, the skill must first generate the image(s) itself, then deeply and cleanly analyze those generated image(s), then use them as the primary visual source, then build the frontend to match them closely.
+
+Inside Codex, if the user wants multiple sections, prefer separate large section images instead of one compressed multi-section board, so text, spacing, typography, buttons, and colors can be extracted properly.
+
+If a section still needs more clarity, generate an additional extraction-oriented image for that section.
+
+If more images would improve quality, generate more images.
+Do not be lazy with image count.
+
+Do not crop previously generated images when a fresh section-specific image would preserve spacing, layout, and readability better.
+Generate a new clean image instead.
+
+Avoid cards-inside-cards-inside-cards.
+Avoid giant boxed wrappers around every section.
+Avoid fake technical pills and decorative micro-labels.
+Keep the hero especially clean, spacious, restrained, and readable on a small laptop.
+
+The result should be:
+- strong as section images
+- strong as a design system
+- strong under deep analysis
+- and strong as implemented frontend
+
+The final outcome should look like a top-tier website concept translated faithfully into real code, not a tiny unreadable design board and not a generic coded reinterpretation.
+## References
+
+Content split (H5588) — sections below were moved verbatim, read on demand:
+
+- [references/generation-and-analysis.md](references/generation-and-analysis.md) — Sections 4, 6-9: Codex section-image mechanics, fresh regeneration, optional detail images, clean analysis standard, deep image analysis requirement
+- [references/variation-engine.md](references/variation-engine.md) — Section 12: the combinatorial variation engine (per-axis option catalogs to commit to per brief)
+- [references/layout-and-extraction.md](references/layout-and-extraction.md) — Sections 14-28: hero minimalism, responsive first view, anti-nested-box, micro-UI clutter, section image generation, image system, fixed media frames, text/typography/spacing/button/color extraction specs, copy discipline, anti-drift, missing-detail resolution
+- [references/craft-and-packs.md](references/craft-and-packs.md) — Sections 29-33: anti-AI-slop rules, typography-first discipline, section rhythm, density and spacing, default section packs
+- [references/examples.md](references/examples.md) — Section 37: example interpretations

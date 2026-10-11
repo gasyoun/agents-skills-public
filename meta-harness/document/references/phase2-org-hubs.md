@@ -1,0 +1,22 @@
+
+| id | Hub | Applies when | Action |
+|---|---|---|---|
+| `gtd` | `Uprava/GTD_NEXT_ACTIONS.md` | creates/closes a human action or external wait | @DO/@WAITING row with escalation date; close rows it satisfies |
+| `handoffs_registry` | `Uprava/handoffs/README.md` | always (the work itself) | filled + registered per [`/handoff-mint`](https://github.com/gasyoun/claude-config/blob/main/commands/handoff-mint.md) discipline |
+| `features_index` | `SanskritLexicography/FEATURES_INDEX.md` | reusable *capability* (data/interface/tool) | row in the right section — or refresh the owning repo's existing row (the J14 pattern: a stale description hiding a whole workstream) |
+| `reuse_index` | `Uprava/REUSE_INDEX.md` (reusable assets) | reusable tool/library/asset others should consume | hand row in §1 for a tool/library — OR confirm the §2 generated block's SOURCES carry it (kosha `datasets.json` / `interlinks_edges.tsv`; regen `tools/gen_reuse_index.py`). Never hand-edit the `[generated-block: reuse-index-assets]` block (H4545) |
+| `kosha_manifest` | `kosha/data/manifest/datasets.json` | derived dataset | row with tier/rights judgment (unpublished-source ⇒ `restricted`), native indent (don't reformat), then `scripts/build_directory.py` |
+| `data_layers_census` | `Uprava/DATA_LAYERS_CENSUS.md` | large/local-only data (risk) OR closable "statistics to compute" cell | close the cell with the measured number + manifest link |
+| `project_interlinks` | `Uprava/PROJECT_INTERLINKS.md` | creates/changes a cross-repo data edge | inbound + outbound edges; promote the repo out of any "standalone" dump line if it now has edges |
+| `skills_index` | root `SKILLS_INDEX.md` | the artifact IS a skill | row + Codex twin; docs/datasets NEVER go here. Verify with `python ~/.claude/scripts/audit_spine_skills_index.py` (exit 1 = unregistered/dead row) — a header note claiming "+N skills" is **not** evidence rows exist ([H1660](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H1660-Sonnet_Uprava_skill-mine-h1611-h1659_26.07.26.md), Grok 4.5 ran it, Sonnet-named — skill-mine H1611–H1659). Heed its stale-checkout warning; spine main routinely lags origin/main |
+| `articles` | `Uprava/ARTICLES.md` | paper | delegate to [`/articles-update`](https://github.com/gasyoun/claude-config/blob/main/commands/articles-update.md) |
+| `danger_facts` | `Uprava/DANGER_FACTS.md` + `context_facts.yaml` | surfaced a **destructive-risk** fact | append to BOTH in the same pass — a mitigation shipped does not remove the residual-risk entry |
+| `questions_log` | `Uprava/QUESTIONS_LOG.md` | answers a logged question, or repeats a known question pattern (the «а в X отражено?» series = Q2607-24) | new `[Q]` row or Reps-bump; verify the `Next free ID` marker against actual max while there |
+| `megabook` | `Uprava/MEGABOOK.md` | **refines a thesis** — never operational status | edit the thesis section; then `python tools/crosslink_weave_check.py MEGABOOK.md` |
+| `skills_manual_ru` | `Uprava/SKILLS_MANUAL_RU.md` | a skill/tool **contract** changed | update the RU card(s); family-wide mechanics get a family-callout box, not N copies |
+| `hooks_index` | claude-config `HOOKS_INDEX.md` | changed enforcement | update the hook's roster row — incl. cross-refs to in-tool guards covering a blind spot |
+| `repo_status_rollup` | `Uprava/REPO_STATUS_ROLLUP.md` | touched repo's section stale/missing | refresh just that section (`/repo-status` format) |
+| `hub_manifest` | `Uprava/tools/hub_manifest.json` | artifact IS a new long-lived hub/registry | staleness-tracking row (id/repo/path/role/max_age_days), re-run `tools/hub_staleness_refresh.py` |
+| `auto_derived_views` | Auto-derived views (NEXT_UP/BOTTLENECKS/kanban/dashboards/HUB_STALENESS_REPORT) | always | **never hand-edit**; verify SOURCES carry the change and regen cadence is alive. Verdict: "auto — source updated" |
+| `epistemic_registries` | FINDINGS x2 + 7 epistemic registries (ASSUMPTIONS/CONTRADICTIONS/GAPS/DEAD_ENDS/RECIPES/STALENESS/GLOSSARY, Uprava + SanskritLexicography) | rests on an unproven premise / exposed disagreement / opened-closed known-unknown / abandoned approach / reproducible recipe / decays on a known date / coins a term | route via [`/findings-append`](https://github.com/gasyoun/claude-config/blob/main/commands/findings-append.md) or direct registry row — an artifact is not fully registered until its epistemic residue is |
+
