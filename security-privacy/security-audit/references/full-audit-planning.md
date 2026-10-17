@@ -4,7 +4,7 @@ The coverage, prior-run, profile, and budget requirements in this section apply 
 
 ### Coverage and prior runs
 
-No one pass is complete. Build a deterministic coverage plan before hunting and update it after every agent result. [RECONNAISSANCE.md](RECONNAISSANCE.md) defines the stable coverage units and [HUNTING.md](HUNTING.md) defines coverage-critic waves. The parent alone updates the ledger.
+No one pass is complete. Build a deterministic coverage plan before hunting and update it after every agent result. [RECONNAISSANCE.md](security-privacy/security-audit/RECONNAISSANCE.md) defines the stable coverage units and [HUNTING.md](security-privacy/security-audit/HUNTING.md) defines coverage-critic waves. The parent alone updates the ledger.
 
 If prior runs exist, read every compatible `coverage-ledger.json` and `findings.json` before planning the current run:
 

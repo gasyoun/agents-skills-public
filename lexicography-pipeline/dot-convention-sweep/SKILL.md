@@ -34,7 +34,7 @@ same for composing the concrete per-item-type outcome wording
 Two established colour-dot vocabularies exist and must not be conflated:
 
 1. **Severity dots** — grade *the importance of a claim/finding*: 🔴 3 important · 🟠 2 medium · 🟡 1 minor. Canonical in [`SanskritLexicography/FINDINGS.md`](https://github.com/gasyoun/SanskritLexicography/blob/master/FINDINGS.md) and [`Uprava/FINDINGS.md`](https://github.com/gasyoun/Uprava/blob/main/FINDINGS.md); a claim line is prefixed with the dot, `§N`-numbered, followed by `Evidence:`/`Implication:`/blockquoted `Source:`.
-2. **Outcome dots** — grade *the result of one work item* (a batch root, a PR, a repo, a queued correction, an adjudication ruling): 🔴 error/unresolved · 🟡 partial/caveat · 🔵 clean/all-ok. First formalized in [H151 (OxAlpha) — RussianTranslation pwg_ru verb batch drain](https://github.com/gasyoun/Uprava/blob/main/handoffs/H151-OxAlpha_RussianTranslation_pwg_ru_verb_batch_drain_04.07.26.md)'s root drain ledger, then rolled into `/pr-babysit`, `/dirty-tree-sweep`, `/cologne-correction-queue`, `/gold-adjudicate`.
+2. **Outcome dots** — grade *the result of one work item* (a batch root, a PR, a repo, a queued correction, an adjudication ruling): 🔴 error/unresolved · 🟡 partial/caveat · 🔵 clean/all-ok. First formalized in [H151 (OxAlpha) — RussianTranslation pwg_ru verb batch drain](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H151-OxAlpha_RussianTranslation_pwg_ru_verb_batch_drain_04.07.26.md)'s root drain ledger, then rolled into `/pr-babysit`, `/dirty-tree-sweep`, `/cologne-correction-queue`, `/gold-adjudicate`.
 
 Argument: a target file/skill to convert, or `sweep` to search for untreated candidates org-wide.
 

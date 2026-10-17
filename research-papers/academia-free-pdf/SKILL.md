@@ -9,7 +9,7 @@ _Created: 05-10-2026 · Last updated: 05-10-2026_
 
 Use when a paper's PDF lives on academia.edu and the file must land in `~/Downloads`.
 Proven 05-10-2026 on three papers in one session (Shakya 2019, Majcher 2023 ACSA,
-Leonchenko lexical cores) — [H6122](https://github.com/gasyoun/Uprava/blob/main/handoffs/H6122-GLM_Uprava_academia-free-pdf-batch_05.10.26.md),
+Leonchenko lexical cores) — [H6122](https://github.com/gasyoun/Uprava/blob/main/handoffs/archive/H6122-GLM_Uprava_academia-free-pdf-batch_05.10.26.md),
 files landed in [Uprava/papers/refs](https://github.com/gasyoun/Uprava/blob/main/papers/refs/README.md).
 
 ## Preconditions

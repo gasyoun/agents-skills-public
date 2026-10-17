@@ -677,7 +677,7 @@ Contributions welcome! See [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## License
 
-MIT License - See [LICENSE](LICENSE).
+MIT License - See [LICENSE](research-papers/deeppapernote/LICENSE).
 
 ## Support
 

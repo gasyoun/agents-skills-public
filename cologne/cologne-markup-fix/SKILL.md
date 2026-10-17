@@ -151,7 +151,7 @@ an edit. Do not let an open old issue override a `No change` registry status.
 
 ## Phase 3 — Generate `08_markup_fix.py`
 
-Template lives at PWK [pwkissues/markup_fix/08_markup_fix.py](https://github.com/sanskrit-lexicon/PWK/blob/master/pwkissues/markup_fix/08_markup_fix.py) (the original `markup-fix-audit` branch was merged and deleted — master carries the file). Customise:
+Template lives at PWK [pwkissues/markup_fix/08_markup_fix.py](https://github.com/sanskrit-lexicon/PWK/blob/main/pwkissues/markup_fix/08_markup_fix.py) (the original `markup-fix-audit` branch was merged and deleted — master carries the file). Customise:
 
 1. **Module docstring** — replace `pw.txt` / `PWK` with this dict's filename and repo.
 2. **`PW_TXT` default path** — point at `csl-orig/v02/$SHORT/$SHORT.txt`.
